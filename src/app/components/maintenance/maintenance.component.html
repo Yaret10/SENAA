@@ -1,1 +1,17 @@
-<section class="section maintenance" id="mantenimiento"><div class="container maintenance-grid"><div class="maintenance-visual"><div class="maintenance-image"></div><div class="check-card"><b>✓</b><span>Mantenimiento<br><strong>preventivo</strong></span></div></div><div><span class="eyebrow">Cuida lo que te cuida</span><h2>El mantenimiento previene fallas antes de que interrumpan tu día.</h2><p class="lead">No necesitas conocer de tecnología para cuidar tus equipos. Una revisión profesional permite mantenerlos limpios, eficientes y seguros, evitando reparaciones más costosas a futuro.</p><div class="maintenance-points"><div *ngFor="let point of points"><i>{{ point[0] }}</i><span><strong>{{ point[1] }}</strong>{{ point[2] }}</span></div></div></div></div></section>
+<section class="section maintenance" id="mantenimiento">
+    <div class="container maintenance-grid">
+        <div class="maintenance-visual">
+            <div class="maintenance-image"></div>
+            <div class="check-card"><b>✓</b><span>Mantenimiento<br><strong>preventivo</strong></span></div>
+        </div>
+        <div><span class="eyebrow">Cuida lo que te cuida</span>
+            <h2>El mantenimiento previene fallas antes de que interrumpan tu día.</h2>
+            <p class="lead">No necesitas conocer de tecnología para cuidar tus equipos. Una revisión profesional permite
+                mantenerlos limpios, eficientes y seguros, evitando reparaciones más costosas a futuro.</p>
+            <div class="maintenance-points">
+                <div *ngFor="let point of points"><i>{{ point[0] }}</i><span><strong>{{ point[1] }}</strong>{{ point[2] }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

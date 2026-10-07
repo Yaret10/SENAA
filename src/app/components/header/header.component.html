@@ -27,7 +27,7 @@
     <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-label="Abrir menú"><span></span><span></span><span></span></button>
     <nav [class.open]="menuOpen" aria-label="Navegación principal">
       <a routerLink="/" fragment="inicio" (click)="closeMenu()">Inicio</a><a routerLink="/" fragment="servicios" (click)="closeMenu()">Servicios</a><a routerLink="/" fragment="mantenimiento" (click)="closeMenu()">Mantenimiento</a><a routerLink="/" fragment="nosotros" (click)="closeMenu()">Nosotros</a><a routerLink="/" fragment="contacto" (click)="closeMenu()">Contacto</a>
-      <a class="button whatsapp-button nav-cta" [href]="config.whatsappLink" target="_blank" rel="noopener" (click)="closeMenu()"><span class="wa-mark">◔</span> WhatsApp</a>
+      <a class="button whatsapp-button nav-cta" [href]="config.whatsappLink" target="_blank" rel="noopener" (click)="closeMenu()"><img class="whatsapp-icon" src="/images/whatsapp.svg" alt="" aria-hidden="true"> WhatsApp</a>
     </nav>
   </div>
 </header>

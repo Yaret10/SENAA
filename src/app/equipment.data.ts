@@ -16,7 +16,7 @@ export const EQUIPMENT_PAGES: EquipmentPage[] = [
   {
     slug: 'cocinas',
     name: 'Cocinas',
-    image: '/images/kitchen.svg',
+    image: '/images/Cocina2.png',
     summary: 'Diagnóstico, reparación y mantenimiento para una combustión segura y eficiente.',
     headline: 'Cuida tu cocina y cocina con tranquilidad',
     introduction: 'Revisamos cocinas que presentan fallas y realizamos mantenimiento preventivo para conservar su funcionamiento diario.',
@@ -33,7 +33,7 @@ export const EQUIPMENT_PAGES: EquipmentPage[] = [
   {
     slug: 'refrigeradoras',
     name: 'Refrigeradoras',
-    image: '/images/refrigerator.svg',
+    image: '/images/Refri.webp',
     summary: 'Evita pérdida de frío, consumo excesivo y daños en el compresor.',
     headline: 'Protege tus alimentos y la vida útil de tu refrigeradora',
     introduction: 'Diagnosticamos fallas de enfriamiento y cuidamos los componentes que permiten mantener una temperatura estable.',
@@ -50,7 +50,7 @@ export const EQUIPMENT_PAGES: EquipmentPage[] = [
   {
     slug: 'lavadoras',
     name: 'Lavadoras',
-    image: '/images/washer.svg',
+    image: '/images/lavadora.webp',
     summary: 'Atendemos fugas, vibraciones y fallas de bomba, motor o centrifugado.',
     headline: 'Mantén tu lavadora eficiente en cada ciclo',
     introduction: 'Reparamos averías y revisamos las piezas que intervienen en el llenado, lavado, drenaje y centrifugado.',
@@ -67,7 +67,7 @@ export const EQUIPMENT_PAGES: EquipmentPage[] = [
   {
     slug: 'lavasecas',
     name: 'Lavasecas',
-    image: '/images/washer-dryer.svg',
+    image: '/images/lavasecas.webp',
     summary: 'Mantenimiento para un lavado y secado eficiente, sin sobrecalentamiento.',
     headline: 'Cuida las dos funciones de tu lavaseca',
     introduction: 'Evaluamos el lavado y el secado como un sistema completo para que el equipo trabaje con buen rendimiento.',
@@ -84,7 +84,7 @@ export const EQUIPMENT_PAGES: EquipmentPage[] = [
   {
     slug: 'termas',
     name: 'Termas',
-    image: '/images/water-heater.svg',
+    image: '/images/termas.webp',
     summary: 'Revisión eléctrica, control de sarro, fugas y correcto calentamiento.',
     headline: 'Agua caliente con funcionamiento confiable',
     introduction: 'Revisamos y mantenemos termas para detectar fugas, acumulación de sarro y fallas de calentamiento.',

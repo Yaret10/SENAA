@@ -18,6 +18,7 @@ h2 { font-size:clamp(2rem,4vw,3rem); line-height:1.13; margin:12px 0 14px; }
 .button-primary { color:#fff; background:var(--orange); box-shadow:0 8px 18px rgba(244,124,43,.22); }
 .button-primary:hover { background:var(--orange-dark); }
 .whatsapp-button { color:#fff; background:#20b961; box-shadow:0 8px 18px rgba(32,185,97,.2); }.whatsapp-button:hover { background:#159a4b; }
+.whatsapp-icon { display:block; flex:none; width:21px; height:21px; margin-right:7px; }
 .button-outline { color:var(--navy); background:#fff; border-color:#cddae5; }
 .button-outline:hover { border-color:var(--blue); }
 @media (max-width:700px) { .container { width:min(100% - 32px, 1140px); } .section { padding:68px 0; } }

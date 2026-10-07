@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35c1cca-78f6-466a-bda1-fefe80d83247" name="Changes" comment="" />
+    <list default="true" id="f35c1cca-78f6-466a-bda1-fefe80d83247" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/staticwebapp.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/staticwebapp.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/hero.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/maintenance/maintenance.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/maintenance/maintenance.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/maintenance/maintenance.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/maintenance/maintenance.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/services/services.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/services.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/whatsapp-float/whatsapp-float.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/whatsapp-float/whatsapp-float.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/whatsapp-float/whatsapp-float.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/whatsapp-float/whatsapp-float.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/equipment.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/equipment.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/equipment-detail/equipment-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/equipment-detail/equipment-detail.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/equipment-detail/equipment-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/equipment-detail/equipment-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/site.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/site.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,11 +42,14 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/yaret/JAVA/PROYECTOS_PROTAFOLIO/SENAA/public/images",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "C:\\Users\\yaret\\JAVA\\PROYECTOS_PROTAFOLIO\\SENAA\\node_modules\\typescript\\lib",
     "ultimate.editor.notification.dismissed.AngularFreeTierEditorNotificationProvider": "true"
@@ -35,6 +57,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yaret\JAVA\PROYECTOS_PROTAFOLIO\SENAA\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yaret\JAVA\PROYECTOS_PROTAFOLIO\SENAA\public\images" />
     </key>
   </component>

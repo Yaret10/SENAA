@@ -1,1 +1,125 @@
-.maintenance { background:var(--surface); }.maintenance-grid { display:grid; grid-template-columns:.92fr 1.08fr; align-items:center; gap:78px; }.maintenance-visual { position:relative; min-height:410px; }.maintenance-image { position:absolute; inset:0 25px 0 0; border-radius:18px; background:linear-gradient(145deg,rgba(8,39,69,.08),rgba(8,39,69,.42)),url('/images/refrigerator.svg') center/cover; box-shadow:15px 16px 0 #dceaf3; }.check-card { position:absolute; right:0; bottom:31px; display:flex; align-items:center; gap:11px; padding:14px 18px; border-radius:11px; background:#fff; box-shadow:0 12px 25px rgba(20,65,93,.16); color:#728395; font-size:.73rem; }.check-card b { display:grid; place-items:center; width:29px; height:29px; border-radius:50%; background:#20b961; color:#fff; }.check-card strong { color:var(--navy); }.maintenance h2 { margin:11px 0 16px; }.lead { max-width:565px; color:var(--muted); font-size:.94rem; line-height:1.75; }.maintenance-points { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:27px; }.maintenance-points>div { display:flex; gap:11px; }.maintenance-points i { display:grid; flex:0 0 29px; place-items:center; width:29px; height:29px; color:var(--blue); border-radius:8px; background:#dff1fc; font-style:normal; font-weight:700; }.maintenance-points strong,.maintenance-points span { display:block; }.maintenance-points strong { margin-bottom:4px; color:var(--navy); font-size:.84rem; }.maintenance-points span { color:var(--muted); font-size:.76rem; line-height:1.5; }@media(max-width:800px){.maintenance-grid{grid-template-columns:1fr;gap:45px}.maintenance-visual{min-height:330px}}@media(max-width:470px){.maintenance-points{grid-template-columns:1fr}}
+.maintenance {
+    background: var(--surface);
+}
+
+.maintenance-grid {
+    display: grid;
+    grid-template-columns:.92fr 1.08fr;
+    align-items: center;
+    gap: 78px;
+}
+
+.maintenance-visual {
+    position: relative;
+    min-height: 410px;
+}
+
+.maintenance-image {
+    position: absolute;
+    inset: 0 25px 0 0;
+    border-radius: 18px;
+    background-color: #fff;
+    background-image: linear-gradient(145deg, rgba(8, 39, 69, .02), rgba(8, 39, 69, .16)), url('/images/collage.png');
+    background-position: center;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    box-shadow: 15px 16px 0 #dceaf3;
+}
+
+.check-card {
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 14px 18px;
+    border-radius: 11px;
+    background: #fff;
+    box-shadow: 0 12px 25px rgba(20, 65, 93, .16);
+    color: #728395;
+    font-size: .73rem;
+}
+
+.check-card b {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #20b961;
+    color: #fff;
+}
+
+.check-card strong {
+    color: var(--navy);
+}
+
+.maintenance h2 {
+    margin: 11px 0 16px;
+}
+
+.lead {
+    max-width: 565px;
+    color: var(--muted);
+    font-size: .94rem;
+    line-height: 1.75;
+}
+
+.maintenance-points {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+    margin-top: 27px;
+}
+
+.maintenance-points > div {
+    display: flex;
+    gap: 11px;
+}
+
+.maintenance-points i {
+    display: grid;
+    flex: 0 0 29px;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    color: var(--blue);
+    border-radius: 8px;
+    background: #dff1fc;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.maintenance-points strong {
+    margin-bottom: 4px;
+    color: var(--navy);
+    font-size: .84rem;
+}
+
+.maintenance-points span {
+    color: var(--muted);
+    font-size: .76rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .maintenance-grid {
+        grid-template-columns:1fr;
+        gap: 45px
+    }
+
+    .maintenance-visual {
+        min-height: 330px
+    }
+}
+
+@media (max-width: 470px) {
+    .maintenance-points {
+        grid-template-columns:1fr
+    }
+}
+
+.maintenance-points strong, .maintenance-points span {
+    display: block;
+}

@@ -6,7 +6,7 @@
 .hero-copy p { max-width:550px; color:var(--muted); font-size:1rem; line-height:1.75; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:11px; margin:28px 0 22px; }
 .hero-caption { display:block; color:#7890a1; font-size:.72rem; font-weight:700; }
-.hero-image { min-height:390px; border-radius:22px; background-color:#c8e1ef; background-position:center; background-size:cover; box-shadow:18px 18px 0 #e3f0f8; }
+.hero-image { min-height:390px; border-radius:22px; background-color:#fff; background-position:center; background-size:contain; background-repeat:no-repeat; box-shadow:18px 18px 0 #e3f0f8; }
 .importance-grid { display:grid; grid-template-columns:.92fr 1.08fr; gap:75px; align-items:center; }
 .importance-grid>div>p { color:var(--muted); font-size:.94rem; line-height:1.8; }
 .benefit-cards { display:grid; gap:13px; }.benefit-cards article { display:flex; gap:16px; padding:19px 22px; border:1px solid var(--line); border-radius:12px; background:#fff; box-shadow:0 6px 20px rgba(24,71,105,.05); }
