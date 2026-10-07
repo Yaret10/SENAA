@@ -1,0 +1,210 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(180, 220, 250, .90);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 1px 0 rgba(66, 137, 183, .22), 0 7px 20px rgba(49, 108, 148, .08);
+}
+
+.topbar {
+    background: var(--navy-deep);
+    color: #d5e6f5;
+    font-size: .78rem;
+}
+
+.topbar-inner {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.topbar-actions,
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-actions {
+    gap: 14px;
+}
+
+.social-links {
+    gap: 7px;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 21px;
+    height: 21px;
+    border: 1px solid rgba(213, 230, 245, .45);
+    border-radius: 50%;
+    transition: background .2s, transform .2s;
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, .18);
+    transform: translateY(-1px);
+}
+
+.social-links svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.social-links svg rect,
+.social-links svg circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.social-links svg .instagram-dot {
+    fill: currentColor;
+    stroke: none;
+}
+
+.nav-wrap {
+    min-height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--navy);
+    font-family: Manrope, sans-serif;
+    font-size: 1.36rem;
+    font-weight: 800;
+    letter-spacing: -.04em;
+}
+
+.brand small {
+    display: block;
+    color: #718194;
+    font-family: 'DM Sans';
+    font-size: .70rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.brand-mark {
+    display: block;
+    flex: 0 0 118px;
+    width: 118px;
+    line-height: 0;
+}
+
+.brand-mark img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: .84rem;
+    font-weight: 600;
+    color: #42566a;
+}
+
+nav > a:not(.button):hover {
+    color: var(--blue);
+}
+
+.nav-cta {
+    min-height: 43px;
+    padding: 0 15px;
+    font-size: .8rem;
+}
+
+.wa-mark {
+    font-size: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: transparent;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 4px;
+    background: var(--navy);
+}
+
+@media (max-width: 800px) {
+    .topbar-inner {
+        justify-content: center;
+    }
+
+    .topbar-inner span {
+        display: none;
+    }
+
+    .topbar-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-wrap {
+        min-height: 80px;
+    }
+
+    .brand-mark {
+        flex-basis: 86px;
+        width: 86px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 18px 20px 24px;
+        background: rgba(235, 247, 255, .97);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 12px 18px rgba(9, 36, 66, .12);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    .nav-cta {
+        text-align: center;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+}

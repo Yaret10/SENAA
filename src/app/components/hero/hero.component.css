@@ -1,0 +1,223 @@
+.hero {
+    overflow: hidden;
+    background: linear-gradient(117deg, #f5faff 0%, #fff 60%);
+    padding: 78px 0 72px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns:1.03fr .97fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-copy {
+    max-width: 620px;
+}
+
+.hero-eyebrow {
+    margin-bottom: 17px;
+}
+
+.hero h1 {
+    max-width: 610px;
+    margin-bottom: 20px;
+    font-size: clamp(2.65rem, 5vw, 4.55rem);
+    line-height: 1.06;
+}
+
+.hero h1 em {
+    color: var(--blue);
+    font-style: normal;
+}
+
+.hero-copy > p {
+    max-width: 550px;
+    margin-bottom: 29px;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-actions span {
+    margin-left: 10px;
+    font-size: 1.25rem;
+}
+
+.trust-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 35px;
+    color: #667789;
+    font-size: .78rem;
+    line-height: 1.45;
+}
+
+.trust-row strong {
+    color: var(--navy);
+    font-size: .85rem;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars b {
+    display: grid;
+    place-items: center;
+    width: 31px;
+    height: 31px;
+    margin-right: -7px;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #72a8d7;
+    font-size: .67rem;
+}
+
+.avatars b:nth-child(2) {
+    background: var(--orange);
+}
+
+.avatars b:nth-child(3) {
+    background: var(--navy);
+}
+
+.hero-visual {
+    position: relative;
+    min-height: 445px;
+    border-radius: 26px;
+    overflow: visible;
+    background: #b8d9eb;
+    box-shadow: 20px 25px 0 #e7f2fa;
+}
+
+.hero-photo {
+    position: absolute;
+    inset: 0;
+    border-radius: 26px;
+    background: linear-gradient(90deg, rgba(7, 33, 57, .12), transparent 55%), url('/images/joel-senaa.jpeg') center/cover;
+}
+
+.visit-card, .quality-badge {
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(33, 79, 110, .17);
+}
+
+.visit-card {
+    top: 35px;
+    left: -35px;
+    width: 178px;
+    padding: 16px;
+    border-radius: 11px;
+}
+
+.visit-card small {
+    display: block;
+    color: #8191a1;
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.visit-card strong {
+    display: block;
+    margin: 5px 0 3px;
+    color: var(--navy);
+    font-size: .88rem;
+}
+
+.visit-card > span:last-child {
+    color: #718092;
+    font-size: .66rem;
+}
+
+.status-dot {
+    float: right;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #42b883;
+}
+
+.quality-badge {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    right: -25px;
+    bottom: 37px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #748496;
+    font-size: .67rem;
+}
+
+.quality-badge b {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    background: var(--orange);
+}
+
+.quality-badge strong {
+    color: var(--navy);
+    font-size: .74rem;
+}
+
+@media (max-width: 800px) {
+    .hero-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero {
+        padding-top: 57px;
+    }
+
+    .hero-visual {
+        width: min(460px, calc(100% - 28px));
+        margin: 10px auto 0;
+        min-height: 390px;
+    }
+
+    .quality-badge {
+        right: -18px;
+    }
+
+    .visit-card {
+        left: -18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.55rem;
+    }
+
+    .hero-visual {
+        min-height: 350px;
+    }
+
+    .visit-card {
+        top: 16px;
+        transform: scale(.84);
+        transform-origin: top left;
+    }
+
+    .quality-badge {
+        bottom: 15px;
+        transform: scale(.85);
+        transform-origin: bottom right;
+    }
+}

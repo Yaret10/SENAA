@@ -1,0 +1,24 @@
+<footer class="footer">
+    <div class="container footer-grid">
+        <div><a class="footer-brand" routerLink="/" fragment="inicio">{{ config.name }}</a><img class="footer-logo"
+                                                                                                src="/images/senaa_logo.jpeg"
+                                                                                                alt="Logo de SENAA">
+            <div class="footer-social-links" aria-label="Redes sociales de SENAA">
+                <a [href]="config.tiktokLink" target="_blank" rel="noopener" aria-label="TikTok de SENAA" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.7 3c.4 2.4 1.8 3.8 4.3 4v3.2c-1.5.1-2.8-.4-4.2-1.2v6.4c0 5.7-6.3 7.5-9.2 4.1-1.9-2.3-1.1-6.3 1.5-7.6 1-.5 2.1-.7 3.1-.5v3.3c-.5-.2-1.1-.1-1.6.1-1.5.7-1.4 3.1.2 3.6 1.1.4 2.5-.2 2.5-1.9V3h3.4z"/></svg></a>
+                <a [href]="config.instagramLink" target="_blank" rel="noopener" aria-label="Instagram de SENAA" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="instagram-dot" cx="17.4" cy="6.7" r="1"/></svg></a>
+                <a [href]="config.facebookLink" target="_blank" rel="noopener" aria-label="Facebook de SENAA" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.1 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H8v3.1h2.7v8h3.4z"/></svg></a>
+            </div>
+            <p>Servicio técnico y mantenimiento de línea blanca para los equipos que hacen funcionar tu hogar.</p></div>
+        <div><h3>Contacto</h3><a [href]="config.phoneLink">{{ config.phoneDisplay }}</a><a [href]="config.whatsappLink"
+                                                                                           target="_blank"
+                                                                                           rel="noopener">WhatsApp
+            SENAA</a><a href="mailto:{{ config.email }}">{{ config.email }}</a>
+            <p>{{ config.schedule }}<br>{{ config.serviceArea }}</p></div>
+        <div><h3>Enlaces rápidos</h3><a routerLink="/" fragment="servicios">Servicios</a><a routerLink="/"
+                                                                                            fragment="mantenimiento">Mantenimiento</a><a
+                routerLink="/" fragment="nosotros">Nosotros</a><a routerLink="/" fragment="contacto">Solicitar
+            servicio</a></div>
+    </div>
+    <div class="container copyright"><span>© {{ year }} {{ config.name }}. Todos los derechos reservados.</span><span>Servicio técnico y mantenimiento responsable.</span>
+    </div>
+</footer>

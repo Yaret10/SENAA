@@ -1,0 +1,114 @@
+.footer {
+    padding-top: 59px;
+    color: #b1c8d9;
+    background: #10385f;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns:1.7fr 1fr 1fr;
+    gap: 70px;
+    padding-bottom: 47px;
+}
+
+.footer-brand {
+    display: block;
+    color: #fff;
+    font: 800 1.17rem Manrope, sans-serif;
+}
+
+.footer-logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.footer-social-links a {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    border: 1px solid rgba(225, 242, 255, .5);
+    border-radius: 50%;
+    transition: background .2s, transform .2s;
+}
+
+.footer-social-links a:hover {
+    background: rgba(255, 255, 255, .17);
+    transform: translateY(-2px);
+}
+
+.footer-social-links svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+.footer-social-links svg rect,
+.footer-social-links svg circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.footer-social-links svg .instagram-dot {
+    fill: currentColor;
+    stroke: none;
+}
+
+.footer p {
+    max-width: 280px;
+    margin: 16px 0 0;
+    font-size: .79rem;
+    line-height: 1.6;
+}
+
+.footer h3 {
+    margin: 5px 0 15px;
+    color: #8fc3e6;
+    font: 700 .68rem 'DM Sans';
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.footer-grid > div:not(:first-child) a {
+    display: block;
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(178, 211, 233, .16);
+    color: #7e9aae;
+    font-size: .68rem;
+}
+
+@media (max-width: 650px) {
+    .footer-grid {
+        grid-template-columns:1fr 1fr;
+        gap: 35px
+    }
+
+    .footer-grid > div:first-child {
+        grid-column: 1/-1
+    }
+
+    .copyright {
+        display: block;
+        line-height: 1.8
+    }
+}

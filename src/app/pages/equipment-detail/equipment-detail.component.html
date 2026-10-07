@@ -1,0 +1,44 @@
+<app-header />
+<main>
+  <section class="detail-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Ruta de navegación">
+        <a routerLink="/">Inicio</a><span>/</span><a routerLink="/" fragment="servicios">Servicios</a><span>/</span><span>{{ equipment.name }}</span>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Servicio técnico SENAA</span>
+          <h1>{{ equipment.headline }}</h1>
+          <p>{{ equipment.introduction }}</p>
+          <div class="hero-actions">
+            <a class="button button-primary" routerLink="/" fragment="contacto">Solicitar servicio</a>
+            <a class="button whatsapp-button" [href]="config.whatsappLink" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+          <span class="hero-caption">Diagnóstico · Reparación · Mantenimiento preventivo y correctivo</span>
+        </div>
+        <div class="hero-image" [style.background-image]="'url(' + equipment.image + ')'" role="img" [attr.aria-label]="'Ilustración de ' + equipment.name.toLowerCase()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section importance">
+    <div class="container importance-grid">
+      <div><span class="eyebrow">Prevención que vale la pena</span><h2>¿Por qué es importante el mantenimiento de {{ equipment.name.toLowerCase() }}?</h2><p>{{ equipment.importance }}</p></div>
+      <div class="benefit-cards"><article *ngFor="let benefit of equipment.benefits"><span class="check-icon">✓</span><div><h3>{{ benefit.title }}</h3><p>{{ benefit.description }}</p></div></article></div>
+    </div>
+  </section>
+
+  <section class="section detail-columns">
+    <div class="container columns-grid">
+      <article class="detail-panel"><span class="eyebrow">Qué revisamos</span><h2>Un mantenimiento pensado para tu equipo</h2><p>La evaluación concreta depende del modelo y del estado del aparato.</p><ul><li *ngFor="let task of equipment.maintenance"><span>✓</span>{{ task }}</li></ul></article>
+      <article class="detail-panel warning-panel"><span class="eyebrow">Señales a tiempo</span><h2>Cuándo conviene solicitar una revisión</h2><p>Si observas alguno de estos cambios, una visita técnica puede ayudarte a identificar la causa.</p><ul><li *ngFor="let sign of equipment.warningSigns"><span>•</span>{{ sign }}</li></ul></article>
+    </div>
+    <div class="container"><p class="safety-note">{{ equipment.closing }}</p></div>
+  </section>
+
+  <section class="detail-cta"><div class="container cta-inner"><div><span class="eyebrow">SENAA a domicilio</span><h2>Cuida tus {{ equipment.name.toLowerCase() }} con una revisión profesional.</h2><p>Cuéntanos qué sucede y coordinemos una visita técnica.</p></div><div class="cta-buttons"><a class="button button-primary" routerLink="/" fragment="contacto">Solicitar servicio</a><a class="button whatsapp-button" [href]="config.whatsappLink" target="_blank" rel="noopener">Contactar por WhatsApp</a></div></div></section>
+
+  <section class="section related"><div class="container"><div class="section-heading"><span class="eyebrow">También atendemos</span><h2>Otros equipos de línea blanca</h2></div><div class="related-grid"><a *ngFor="let item of otherEquipment" [routerLink]="['/servicios', item.slug]"><span>{{ item.name }}</span><b>→</b></a></div></div></section>
+</main>
+<app-footer />
+<app-whatsapp-float />
